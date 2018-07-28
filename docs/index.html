@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Merriweather:400italic,400" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="<link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">">
+    <!--Need to Fix This stylesheet First before using! <link rel="stylesheet" href="<link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}-->
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
     <!-- Google Analytics -->
     <script>
@@ -25,53 +25,53 @@
  <!-- End Google Analytics -->
 </head>
 <body>
-	<a class="cd-nav-trigger cd-text-replace" href="#primary-nav">Menu<span aria-hidden="true" class="cd-icon"></span></a>
-	<div class="cd-projects-container">
-		<ul class="cd-projects-previews">
-			<li class="bg-loaded">
-				<a href="#0">
-					<div class="cd-project-title">
-						<h2>Huseen Sufi</h2>
-						<p>About Me</p>
-					</div>
-				</a>
-			</li>
-			<li class="bg-loaded">
-				<a href="#0">
-					<div class="cd-project-title">
-						<h2>Personal Portfolio</h2>
-						<p>HTML5, CSS3, JAVASCRIPT</p>
-					</div>
-				</a>
-			</li>
-			<li class="bg-loaded">
-				<a href="#0">
-					<div class="cd-project-title">
-						<h2>Java</h2>
-						<p>Java Algorithms</p>
-					</div>
-				</a>
-			</li>
-			<li class="bg-loaded">
-				<a href="#0">
-					<div class="cd-project-title">
-						<h2>Recent Projects</h2>
-                        <p>TBD</p>
-                        <p>TBD</p>
-					</div>
-				</a>
-			</li>
-		</ul> <!-- .cd-projects-previews -->
-		<ul class="cd-projects">
+	<a id="forkme_banner" href="{{ site.github.repository_url }}"">Menu</a>
+	<div>
+		<ul>
 			<li>
-		<div class="preview-image">
-		    <div class="cd-project-title">
-			<h2>Huseen Sufi</h2>
-			<p>About Me</p>
+				<a href="title">
+					<div>
+						<h2 id="project_title">Huseen Sufi</h2>
+						<p id="project_tagline">About Me</p>
+					</div>
+				</a>
+			</li>
+			<li class="">
+				<a href="#0">
+					<div class="">
+						<h2 id="project_title">Personal Portfolio</h2>
+						<p id="project_tagline">HTML5, CSS3, JAVASCRIPT</p>
+					</div>
+				</a>
+			</li>
+			<li class="">
+				<a href="#0">
+					<div class="">
+						<h2 id="project_title">Java</h2>
+						<p id="project_tagline">Java Algorithms</p>
+					</div>
+				</a>
+			</li>
+			<li class="">
+				<a href="#0">
+					<div class="">
+						<h2 id="project_title">Recent Projects</h2>
+                        <p>TBD</p>
+                        <p>TBD</p>
+					</div>
+				</a>
+			</li>
+		</ul> <!-- .-previews -->
+		<ul class="">
+			<li>
+		<div class="">
+		    <div>
+			<h2 id="project_title">Huseen Sufi</h2>
+			<p id="project_tagline">About Me</p>
 	            </div> 
 		    </div>
-		    <div class="cd-project-info">
-                    <img src="" alt="My Profile Photo" class="profile-pic-preview">
+		    <div class="main_content_wrap" class="outer">
+                    <img src="" alt="My Profile Photo">
                     <blockquote>TBD</blockquote>
                     <p>
                         I am a quick learner, relentless and thorough individual. I hold myself to high standards and always set ambitious but achievable goals. I've loved problem-solving since my first foray into building computers as a kid then later learning to code simple bash scripts for fun. Now, as a Senior at Colorado College I hope to find success as a full time web dev! 
@@ -79,7 +79,7 @@
                     <p>
                         Besides Programming I love all things tech, consider myself sci fi geek, love Ultimate Frisbee, and watching anime! 
                     </p>
-                    <section class="about"> 
+                    <section id="main_content" class="inner" > 
                         <h3>Tech Skills</h3>
                         <dl>
                             <dt>Frontend</dt>
@@ -113,7 +113,7 @@
                         </dl>
                         <dl> 
                     </section>
-                    <section class="about"> 
+                    <section id="main_content" class = "inner"> 
                         <h3>Education</h3>
                         <dl class="block-dd">
                             <dd>Thinkful.com - Full Stack Web Development Course. TBD</dd>
@@ -124,66 +124,66 @@
 				</div> <!-- .cd-project-info -->
 			</li>
 			<li>
-				<div class="preview-image">
-					<div class="cd-project-title">
+				<div id="main_content_wrapper">
+					<div id="main_content" class = "inner">
 						<h2>TBD</h2>
 						<p>HTML5, CSS3, JAVASCRIPT</p>
 					</div> 
 				</div>
-				<div class="cd-project-info">
-                    <div class="center">
+				<div class="c">
+                    <div id="main_content_wrap" class="outer">
                         <img src="img/nbc_logo.png" alt="nbc"> 
                     </div>
-                    <div class="cd-project-wrapper">
-                        <section>
-                            <h2>TBD</h2>
-                            <h3>TBD - TBD, &nbsp; TBD</h3>
-                            <ul class="cd-project-info-list">
+                    <div id="main_content_wrap" class="outer">
+                        <section id="main_content" class = "inner">
+                            <h2 id="project_title">TBD</h2>
+                            <h3 id="project_tagline"">TBD - TBD, &nbsp; TBD</h3>
+                            <ul class="">
                                 <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
    								<li>Aliquam tincidunt mauris eu risus.</li>
    								<li>Vestibulum auctor dapibus neque.</li>
                             </ul>
                         </section>
                         <hr>
-                        <section class="dev-tmz group">
-                            <h2>TBD</h2>
+                        <section id="main_content" class="inner">
+                            <h2 id="project_title">TBD</h2>
                             <h3>TBD - TBD, &nbsp; Web Developer</h3>
-                            <ul class="cd-project-info-list">
+                            <ul class="">
                                 <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
    								<li>Aliquam tincidunt mauris eu risus.</li>
    								<li>Vestibulum auctor dapibus neque.</li>
                             </ul>
                         </section>
                         <hr>
-                        <section class="dev-katieb group">
-                            <h2>TBD</h2>
+                        <section id="main_content" class="inner">
+                            <h2 id="project_title">TBD</h2>
                             <h3>TBD - TBD, &nbsp; TBD</h3>
-                            <ul class="cd-project-info-list">
+                            <ul class="">
                                 <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
    								<li>Aliquam tincidunt mauris eu risus.</li>
    								<li>Vestibulum auctor dapibus neque.</li>
                             </ul>
-                        </section>
+                        </section >
                     </div>  
 				</div> <!-- .cd-project-info -->
 			</li>
 			<li>
-				<div class="preview-image">
-					<div class="cd-project-title">
+				<div>
+					<div id="main_content" class="inner">
 						<h2>Recent Projects</h2>
                         <p>TBD</p>
                         <p>TBD</p>
 					</div> 
 				</div>
-				<div class="cd-project-info">
-                    <section class="project colorB group">
+				<div class=" id="main_content_wrap" class="outer">
+                    <section  id="main_content" class="inner">
                         <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
    						<li>Aliquam tincidunt mauris eu risus.</li>
    						<li>Vestibulum auctor dapibus neque.</li>
                     </section>
-                    <section class="project colorB group">
-                        <ul class="techstack">
-                            <li>
+                    <section id="main_content" class="inner">
+                        <ul>
+                            <li id="project_title">
                                 TECHNOLOGY STACK
                                 <ul>
                                 	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
@@ -193,12 +193,12 @@
                             </li>
                         </ul>
                     </section>                    
-                    <section class="project colorA group">
-                        <h3>TBD</h3>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <section id="main_content" class="inner">
+                        <h3 id="project_title>TBD</h3>
+                        <li id="project_tagline">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
    				<li>Aliquam tincidunt mauris eu risus.</li>
    				<li>Vestibulum auctor dapibus neque.</li>
-                        <ul class="techstack">
+                        <ul class="">
                             <li>
                                 TECHNOLOGY STACK
                                 <ul>
@@ -212,17 +212,27 @@
                     </section>
 				</div> <!-- .cd-project-info -->
 			</li>
-		</ul> <!-- .cd-projects -->
-		<button class="scroll cd-text-replace">Scroll</button>
+		</ul> <!-- . -->
+		<button class="">Scroll</button>
 	</div> <!-- .cd-project-container -->
 
-	<nav class="cd-primary-nav" id="primary-nav">
-		<ul>
-			<li class="cd-label">INQUIRE</li>
+	<nav  id="header_wrap" class="outer">
+		<ul class="inner">
+			<li class="">INQUIRE</li>
 			<li><a href="mailto:huseensufi@gmail.com?subject=Web%20Inquiry">Email Me</a></li>
 			<li> Huseen Sufi<a href="https://www.slideshare.net/slideshow/embed_code/key/sSHMvIz7mQ9HRi">Download Resume</a></li>
 		</ul>
 	</nav> <!-- .cd-primary-nav -->
+ 	
+	<!-- FOOTER  -->
+	    <div id="footer_wrap" class="outer">
+	      <footer class="inner">
+		{% if site.github.is_project_page %}
+		<p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+		{% endif %}
+		<p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+	      </footer>
+    </div>
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
