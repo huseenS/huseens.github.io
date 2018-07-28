@@ -1914,7 +1914,6 @@ input, select, textarea {
 
 		ul.actions li {
 			padding: 0 0 0 1em;
-			: middle;
 		}
 
 		ul.actions.special {
@@ -2825,7 +2824,6 @@ input, select, textarea {
 
 			#header .logo > * {
 				display: inline-block;
-				: middle;
 			}
 
 			#header .logo .symbol {
