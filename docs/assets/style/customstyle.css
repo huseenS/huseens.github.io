@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300\,700\,900");
 
 /*
 	Phantom by HTML5 UP
@@ -22,7 +22,6 @@ footer, header, hgroup, menu, nav, output, section, summary, time, mark, audio, 
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
 }
 
 article, aside, details, figcaption, figure,
@@ -1915,7 +1914,7 @@ input, select, textarea {
 
 		ul.actions li {
 			padding: 0 0 0 1em;
-			vertical-align: middle;
+			: middle;
 		}
 
 		ul.actions.special {
@@ -2826,7 +2825,7 @@ input, select, textarea {
 
 			#header .logo > * {
 				display: inline-block;
-				vertical-align: middle;
+				: middle;
 			}
 
 			#header .logo .symbol {
