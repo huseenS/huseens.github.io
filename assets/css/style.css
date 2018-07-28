@@ -1,9 +1,9 @@
-/*------
+*---
 
-/*----
+/XXX
 Primary style
 
--------------------------------- */
+--------------------------------XXXX/
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -111,13 +111,13 @@ content: "";
     margin-bottom: 0em;
   }
 }
-/* -------------------------------- 
+/XX -------------------------------- 
 
 Patterns - reusable parts of our design
 
--------------------------------- */
+-------------------------------- X/
 .cd-text-replace {
-  /* replace text with image */
+  /X replace text with image X/
   color: transparent;
   text-indent: 100%;
   overflow: hidden;
@@ -135,11 +135,11 @@ Patterns - reusable parts of our design
     display:inline-block;
     margin-left: 1.3%
 }
-/* -------------------------------- 
+/X -------------------------------- 
 
 Menu trigger
 
--------------------------------- */
+-------------------------------- X/
 .cd-nav-trigger {
   position: absolute;
   z-index: 4;
@@ -156,11 +156,11 @@ Menu trigger
 .cd-nav-trigger .cd-icon,
 .cd-nav-trigger .cd-icon::before,
 .cd-nav-trigger .cd-icon::after {
-  /* menu icon created in CSS */
+  /X menu icon created in CSS X/
   position: absolute;
   background-color: #ffffff;
   border-radius: 2px;
-  /* Force Hardware Acceleration in WebKit */
+  /X Force Hardware Acceleration in WebKit X/
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -173,7 +173,7 @@ Menu trigger
   background-color: black;
 }
 .cd-nav-trigger .cd-icon {
-  /* middle line of the menu icon */
+  /X middle line of the menu icon X/
   display: inline-block;
   width: 18px;
   height: 2px;
@@ -191,7 +191,7 @@ Menu trigger
   transition: transform 0.3s, background-color 0.3s;
 }
 .cd-nav-trigger .cd-icon::before, .cd-nav-trigger .cd-icon::after {
-  /* upper and lower lines of the menu icon */
+  /X upper and lower lines of the menu icon X/
   content: '';
   top: 0;
   right: 0;
@@ -216,7 +216,7 @@ Menu trigger
   transform: translateY(6px);
 }
 .cd-nav-trigger.project-open .cd-icon {
-  /* user selects a projects - transform the icon into a 'X' */
+  /X user selects a projects - transform the icon into a 'X' X/
   background-color: rgba(255, 255, 255, 0);
 }
 .cd-nav-trigger.project-open .cd-icon::before, .cd-nav-trigger.project-open .cd-icon::after {
@@ -237,7 +237,7 @@ Menu trigger
   transform: translateY(0) rotate(-45deg);
 }
 .cd-nav-trigger.nav-visible .cd-icon {
-  /* user opens the navigation - transform the icon into an arrow */
+  /X user opens the navigation - transform the icon into an arrow X/
   -webkit-transform: translateY(-50%) translateX(-50%);
   -moz-transform: translateY(-50%) translateX(-50%);
   -ms-transform: translateY(-50%) translateX(-50%);
@@ -282,18 +282,18 @@ Menu trigger
   }
 }
 
-/* -------------------------------- 
+/X -------------------------------- 
 
 Projects
 
--------------------------------- */
+-------------------------------- X/
 .cd-projects-container {
   position: relative;
   z-index: 2;
   overflow-x: hidden;
 }
 .cd-projects-container.project-open {
-  /* smooth scroll on iOS devices */
+  /X smooth scroll on iOS devices X/
   -webkit-overflow-scrolling: touch;
 }
 .cd-project-wrapper {
@@ -320,7 +320,7 @@ Projects
   -webkit-transition: -webkit-transform 0.5s;
   -moz-transition: -moz-transform 0.5s;
   transition: transform 0.5s;
-  /* Force Hardware Acceleration */
+  /X Force Hardware Acceleration X/
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transform: translateZ(1px);
@@ -331,7 +331,7 @@ Projects
 }
 .cd-projects-previews li.selected {
   opacity: 0;
-  /* move selected project preview out of the viewport with no transition */
+  /X move selected project preview out of the viewport with no transition X/
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -352,7 +352,7 @@ Projects
   display: block;
   height: 100vh;
   width: 100%;
-  /* fixes a bug on projects caption width */
+  /X fixes a bug on projects caption width X/
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -408,7 +408,7 @@ Projects
     transform: translateY(-100%);
   }
   .cd-projects-previews a {
-    /* width equal to window width */
+    /X width equal to window width X/
     width: 400%;
   }
   .cd-projects-previews li:nth-of-type(2) a {
@@ -467,7 +467,7 @@ Projects
 
 .cd-projects-previews a,
 .cd-projects .preview-image {
-  /* set a background image for each project */
+  /Xset a background image for each project X/
   background: #ccaabb url(../img/blank.png) no-repeat center center;
 
 }
@@ -509,7 +509,7 @@ Projects
   -moz-osx-font-smoothing: grayscale;
 }
 .cd-project-title::after {
-  /* line below project title */
+  /X line below project title X/
   content: '';
   position: absolute;
   left: 50%;
@@ -702,7 +702,7 @@ li.selected .cd-project-title,
   left: 50%;
   width: 44px;
   height: 44px;
-  /* rest button default style */
+  /X rest button default style X/
   cursor: pointer;
   border: none;
   background: url("../img/cd-icon-arrow.svg") no-repeat center center;
@@ -791,11 +791,11 @@ li.selected .cd-project-title,
     transform: translateX(-50%) scale(1);
   }
 }
-/* --------------------------------
+/X --------------------------------
 
 Current Projects
 
--------------------------------- */
+-------------------------------- X/
 section.project.colorA {
     background: linear-gradient(to bottom, rgba(159,142,156,.3), rgba(159,142,156, .1));
 }
@@ -872,11 +872,11 @@ section.project img {
     margin-bottom: 7px;
     font-weight: 300;
 }
-/* -------------------------------- 
+/X -------------------------------- 
 
  Navigation
 
--------------------------------- */
+-------------------------------- X/
 .cd-primary-nav {
   position: absolute;
   z-index: 1;
@@ -890,11 +890,11 @@ section.project img {
   -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
   transition: opacity 0.6s;
-  /* vertically align its content */
+  /Xvertically align its content X/
   display: table;
 }
 .cd-primary-nav ul {
-  /* vertically align inside nav */
+  /X vertically align inside nav X/
   display: table-cell;
   vertical-align: middle;
 }
@@ -925,7 +925,7 @@ section.project img {
   letter-spacing: 1px;
 }
 .cd-primary-nav .cd-label::after {
-  /* line below .cd-label*/
+  /X line below .cd-labelX/
   content: '';
   position: absolute;
   left: 50%;
@@ -954,9 +954,9 @@ section.project img {
     font-size: 4rem;
   }
 }
-/* --------------------------------
+/X --------------------------------
 Background Images
--------------------------------- */
+-------------------------------- X/
 
 .screenshot-tmz, .screenshot-katieb, .screenshot-movement133 {
   width: 100%;
@@ -1000,11 +1000,11 @@ Background Images
     margin-top: 4em;
   }
 }
-/* -------------------------------- 
+/X -------------------------------- 
 
 JavaScript Disabled
 
--------------------------------- */
+-------------------------------- X/
 .no-js .cd-primary-nav {
   display: block;
   position: static;
