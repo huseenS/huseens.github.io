@@ -3305,9 +3305,10 @@ input, select, textarea {
 
 .resp-iframe {
 	padding-top: 56%; /* 8:5 Aspect Ratio */
-	position: absolute;
-    top: 0;
-    left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
     width: 826px; 
     height: 1122px
 }
