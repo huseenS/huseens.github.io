@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title>Letter Of Recommendation</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet"title="custom Styles" href="css/customstyles.css">
-		
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</head>
+	<title>Letter of Rec PDF</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet"title="Boostrap" href="css/bootstrap.css">
+	
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/bootstrap.bundle.js"></script>
+</head>
 <body>
-	<script language="javaScript">
-			function resize()
-			{
-			    window.parent.autoResize();
-			}
-
-			$(window).on('resize', resize);
-		</script>
-		
-	<div id="wrapper">
+	<div class="container-fluid">
 		<!-- Header -->
-		<header id="header">
-			<div class="inner">
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li>
-							    <a href="https://imgbb.com/">
-							    	<img src="https://image.ibb.co/hTzy68/logo.png" border="0" class="fa fa-5x" />
-							    </a>
-							</li>
-							<li><a href="index.hmtl">Menu</a></li>
-							<li><a href="resume.html">Resume</a></li>
-							<li><a href="projects.hmtl">Projects</a></li>
-							<li><a href="LetterOfRec.html">Letter Of Recomendation</a></li>
-						</ul>
-					</nav>
+		<header id="row">
+			<div class="col-lg">
+				<!---Boot Strap Nav -->
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				  <a class="navbar-brand" href="https://image.ibb.co/hTzy68/logo.png" width="150" height="150" alt="Logo not Loading"></a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				    <div class="navbar-nav">
+				      <a class="nav-item nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+				      <a class="nav-item nav-link" href="resume.html">Resume</a>
+				      <a class="nav-item nav-link" href="projects.html"">Projects</a>
+				      <a class="nav-item nav-link active" href="LetterOfRec.html">Leter of Rec</a>
+				    </div>
+				</nav>
 			</div>
 		</header>
-	<!-- Wrapper End -->
+	</div><!-- Wrapper End -->
+
+	<div class="container-fluid">
+	<main>
+			<embed id="plugin" type="application/x-google-chrome-pdf" src="http://freepdfhosting.com/58deae36a8.pdf" 
+				stream-url="blob:chrome-extension://mhjfbmdgcfjbbpaeojofohoefgiehjai/dd902563-0110-44e5-9468-3d0f92bbf68b" 
+				headers="Date: Sun, 29 Jul 2018 10:30:10 GMT
+				X-Robots-Tag: noindex, nofollow
+				Server: Apache/2.2.15
+				Last-Modified: Sun, 29 Jul 2018 10:09:17 GMT
+				ETag: &quot;1fb387b-2b689-5722089a332f3&quot;
+				Accept-Ranges: bytes
+				Content-Type: application/pdf
+				Content-Length: 177801" 
+				background-color="0xFF525659" top-toolbar-height="56" top-level-url="undefined" 
+				width=800 height=1200>
+		</div>
+	</main>
 	</div>
 	
-	<main>
-		<!--
-		<script src="" type="text/javascript" charset="utf-8" async defer language="javaScript">
-			function autoResize(){
-			    $('#resp-iframe').height($('#resp-iframe').contents().height());
-			}
-		</script>-->
-		<div>
-			<embed id="plugin" type="application/x-google-chrome-pdf" src="http://freepdfhosting.com/58deae36a8.pdf" 
-			stream-url="blob:chrome-extension://mhjfbmdgcfjbbpaeojofohoefgiehjai/dd902563-0110-44e5-9468-3d0f92bbf68b" 
-			headers="Date: Sun, 29 Jul 2018 10:30:10 GMT
-			X-Robots-Tag: noindex, nofollow
-			Server: Apache/2.2.15
-			Last-Modified: Sun, 29 Jul 2018 10:09:17 GMT
-			ETag: &quot;1fb387b-2b689-5722089a332f3&quot;
-			Accept-Ranges: bytes
-			Content-Type: application/pdf
-			Content-Length: 177801" 
-			background-color="0xFF525659" top-toolbar-height="56" top-level-url="undefined" width=800 height=1200>
-		</div>
-	</main>	
+	<div class="container">
+		<section class=col>
+			<!--Contact ME-->
+			<div class="card">
+				<div class="card-header">
+					<h1 class="card-text">Contact Me</h1>
+				</div>
+				<div class="card-text">
+					<address>
+						Huseen Sufi<br>
+						2301 Cleveland Place, Unit 203<br>
+						Denver, CO 80205<br>
+						<a href="tel:+17204010763">720-401-0763</a><br>
+					</address>
+				</div>
+			</div>
+		</section>
+	</div><!---END FOOTER -->
 </body>
 </html>

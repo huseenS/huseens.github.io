@@ -9,7 +9,7 @@
 		<title>Huseen Sufi Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet"title="custom Styles" href="css/customstyles.css">
+		<link rel="stylesheet"title="Boostrap" href="css/bootstrap.css">
 		
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
@@ -17,73 +17,67 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/bootstrap.bundle.js"></script>
 	</head>
 	<body>
 <!-- Wrapper -->
-	<div id="wrapper">
+	<div class="container-fluid">
 		<!-- Header -->
-	<header id="header">
-		<div class="inner">
-			<!-- Logo -->
-			<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li>
-							<img src="https://image.ibb.co/hTzy68/logo.png" border="0" class="fa fa-5x" />
-						</li>
-						<li><a href="index.html">Main Page</a></li>
-						<li><a href="resume.html">Resume</a></li>
-						<li><a href="projects.html">Projects</a></li>
-						<li><a href="elements.html">Letter Of Recomendation</a></li>
-					</ul>
-				</nav>
+	<header id="row">
+		<div class="col-lg">
+			<!---Boot Strap Nav -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="https://image.ibb.co/hTzy68/logo.png" width="150" height="150" alt="Logo not Loading"></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			    <div class="navbar-nav">
+			      <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+			      <a class="nav-item nav-link" href="resume.html">Resume</a>
+			      <a class="nav-item nav-link" href="projects.html"">Projects</a>
+			      <a class="nav-item nav-link" href="LetterOfRec.html">Leter of Rec</a>
+			    </div>
+			</nav>
 		</div>
 	</header>
-
-<!-- Menu -- need to make clickable hamburger -->
-	<nav id="menu">
-		<h2>Menu</h2>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="generic.html">Resume</a></li>
-			<li><a href="generic.html">Project1</a></li>
-			<li><a href="generic.html">Project2</a></li>
-			<li><a href="elements.html">Project3</a></li>
-			<li><a href="elements.html">Letter Of Recomendation</a></li>
-		</ul>
-	</nav>
-
 <!-- Main -->
-	<div id="main">
-		<div class="inner">
-			<h1>Huseen Sufi | Aspiring Web Developer and Software Engineer</h1>
-			<h2>
-				<img src="https://image.ibb.co/et6368/profilepic.jpg" border="0" class="fa fa-5x">
-				<blockquote>
-					<p>Profie Picture</p>
-				</blockquote>
-			</h2>
-			<span class="image main"><img src="http://www.richardstjohn.com/blog/wp-content/uploads/2017/08/Pikes-Peak-Summit-from-distance-768x432.jpg" alt="Image of Pikes Peak" /></span>
-			<p>I am a quick learner, relentless and thorough individual. I hold myself to high standards and always set ambitious but achievable goals. I've loved problem-solving since my first foray into building computers as a kid then later learning to code simple bash scripts for fun. Now, as a rising Senior at Colorado College, my ambitions include working for a company that is at the leading edge of technology and building upon my skill set by learning new frameworks, languages, and best coding practices. In my free time you'll catch me studying Japanese to keep my conversational ability up and playing videogames.</p>
-			<p>Outside of College and Programming I'm very much into all things tech. I play Ultimate Frisbee and love the outdoors--go hiking and running. Would ride my longboard if my ankle wasn't broken. </p>
-			<hr>
-			<p>As for what I hope to accomplish in the future it's pretty simple. Strive to become the best at what I do, always keep learning new tech and hopefully end up living in Japan happily immersed in the foriegn culture and language</p>
-		</div>
-	</div>
+	<div class="container-fluid">
+		<div class="row justify-content-md-center">
+			<div class="col col-lg-2">
+				<h1 class="card-header">Huseen Sufi | Aspiring Web Developer and Software Engineer</h1>
+				<h2> Profile Picture
+					<img src="https://image.ibb.co/et6368/profilepic.jpg" border="0" class="img-thumbnail"alt="profile pic thumbnail not loaded">
+				</h2>
+				<div>
+					<img class= "img-fluid rounded mx-auto d-block" src="http://www.richardstjohn.com/blog/wp-content/uploads/2017/08/Pikes-Peak-Summit-from-distance-768x432.jpg" alt="Image of Pikes Peak" />
+				</div>
+				<p>I am a quick learner, relentless and thorough individual. I hold myself to high standards and always set ambitious but achievable goals. I've loved problem-solving since my first foray into building computers as a kid then later learning to code simple bash scripts for fun. Now, as a rising Senior at Colorado College, my ambitions include working for a company that is at the leading edge of technology and building upon my skill set by learning new frameworks, languages, and best coding practices. In my free time you'll catch me studying Japanese to keep my conversational ability up and playing videogames.</p>
+				<p>Outside of College and Programming I'm very much into all things tech. I play Ultimate Frisbee and love the outdoors--go hiking and running. Would ride my longboard if my ankle wasn't broken. </p>
+				<hr>
+				<div class="card">
+					<div class="card-body">
+						<p class=card-text">As for what I hope to accomplish in the future it's pretty simple. Strive to become the best at what I do, always keep learning new tech and hopefully end up living in Japan happily immersed in the foriegn culture and language</p>
+					</div>
+				</div>
+			</div>
+	</div><!---Main Container End-->
 	<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<section>
-					<h2>Get in touch</h2>
+	<div class ="card">
+		<footer>
+			<div class="card-header"">
+				<h2 class="card-title">Get in touch</h2>
+			</div>
+			<div class ="card-body">
+				<section class="card-text">
 					<form method="post" action="#">
-						<div class="fields">
-							<div class="field half">
+						<div class="card-text">
+							<div class="card-text">
 								<input type="text" name="name" id="name" placeholder="Name" />
 							</div>
-							<div class="field half">
+							<div class="card-text">
 								<input type="email" name="email" id="email" placeholder="Email" />
 							</div>
-							<div class="field">
+							<div class="card-text">
 								<textarea name="message" id="message" placeholder="Message"></textarea>
 							</div>
 						</div>
@@ -92,24 +86,45 @@
 						</ul>
 					</form>
 				</section>
-				<section>
-					<h2>Where to reach me</h2>
-					<ul class="icons">
-						<li><a href="images/svgs/brands/amazon-pay.svg" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="images/svgs/brands/facebook.svg" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="images/svgs/brands/instagram.svg" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="images/svgs/brands/dribble-sqare.svg" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="images/svgs/brands/github.svg" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="images/svgs/solid/link.svg" class="icon style2 fa-500px"><span class="label">LinkedIn</span></a></li>
-						<li><a href="images/svgs/solid/phone.svg" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
-						<li><a href="images/svgs/solid/envelope-open.svg" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+			</div>
+			<div class="card-body">
+				<section class="card-text">
+					<h2 class=card-title">Where to reach me</h2>
+					<ul class="icons list-group list-group-flush">
+						<li class="list-group-item"><a href="images/svgs/brands/amazon-pay.svg" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+						<li class="list-group-item"><a href="images/svgs/brands/facebook.svg" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+						<li class="list-group-item"><a href="images/svgs/brands/instagram.svg" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+						<li class="list-group-item"><a href="images/svgs/brands/dribble-sqare.svg" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li class="list-group-item"><a href="images/svgs/brands/github.svg" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+						<li class="list-group-item"><a href="images/svgs/solid/link.svg" class="icon style2 fa-500px"><span class="label">LinkedIn</span></a></li>
+						<li class="list-group-item"><a href="images/svgs/solid/phone.svg" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+						<li class="list-group-item"><a href="images/svgs/solid/envelope-open.svg" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
 					</ul>
 				</section>
-				<ul class="copyright">
-					<li>Most of the CSS is from here! &copy;All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
 			</div>
+				<ul class="copyright">
+					<li>
+						Most of the CSS is from here! &copy;All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>
+					</li>
+				</ul>
 		</footer>
-	</div>
-	</body>
+
+		<section>
+		<!--Contact ME-->
+		<div class="card">
+			<div class="card-header">
+				<h1 class="card-text">Contact Me</h1>
+			</div>
+			<div class="card-text">
+				<address>
+					Huseen Sufi<br>
+					2301 Cleveland Place, Unit 203<br>
+					Denver, CO 80205<br>
+					<a href="tel:+17204010763">720-401-0763</a><br>
+				</address>
+			</div>
+		</div>
+	</section>
+</div><!---END FOOTER -->
+</body>
 </html>
