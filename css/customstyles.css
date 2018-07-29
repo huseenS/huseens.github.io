@@ -3303,19 +3303,13 @@ input, select, textarea {
 
 		}
 
-.resp-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56%;
-}
-
 .resp-iframe {
 	padding-top: 56%; /* 8:5 Aspect Ratio */
 	position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 826px; 
+    height: 1122px
 }
 	 
 
