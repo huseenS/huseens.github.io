@@ -118,8 +118,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
   text-align: center;
   justify-content: center;
-  -webkit-text-stroke: 1px black;
-   color: white;
+  color: white;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 p {
@@ -404,7 +406,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
-  color: inherit;
+  color: white;
 }
 
 h1, .h1 {
