@@ -13,32 +13,36 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");
 :root {
-  --blue: #375a7f;
+  :root {
+  --blue: #DF691A;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
-  --red: #E74C3C;
-  --orange: #fd7e14;
-  --yellow: #F39C12;
-  --green: #00bc8c;
+  --red: #d9534f;
+  --orange: #f0ad4e;
+  --yellow: #f0ad4e;
+  --green: #5cb85c;
   --teal: #20c997;
-  --cyan: #3498DB;
+  --cyan: #5bc0de;
   --white: #fff;
-  --gray: #999;
-  --gray-dark: #303030;
-  --primary: #375a7f;
-  --secondary: #444;
-  --success: #00bc8c;
-  --info: #3498DB;
-  --warning: #F39C12;
-  --danger: #E74C3C;
-  --light: #303030;
-  --dark: #adb5bd;
+  --gray: #868e96;
+  --gray-dark: #343a40;
+  --primary: #DF691A;
+  --secondary: #4E5D6C;
+  --success: #5cb85c;
+  --info: #5bc0de;
+  --warning: #f0ad4e;
+  --danger: #d9534f;
+  --light: #8d9dad;
+  --dark: #4E5D6C;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
   --font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -191,14 +195,14 @@ sup {
 }
 
 a {
-  color: #00bc8c;
+  color: #0019ff;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #007053;
+  color: #e29700;
   text-decoration: underline;
 }
 
@@ -6451,87 +6455,91 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #375a7f !important;
+  background-color: #DF691A !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #28415b !important;
+  background-color: #b15315 !important;
 }
 
 .bg-secondary {
-  background-color: #444 !important;
+  background-color: #4E5D6C !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #2b2a2a !important;
+  background-color: #39444e !important;
 }
 
 .bg-success {
-  background-color: #00bc8c !important;
+  background-color: #5cb85c !important;
 }
 
 a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
 button.bg-success:focus {
-  background-color: #008966 !important;
+  background-color: #449d44 !important;
 }
 
 .bg-info {
-  background-color: #3498DB !important;
+  background-color: #5bc0de !important;
 }
 
 a.bg-info:hover, a.bg-info:focus,
 button.bg-info:hover,
 button.bg-info:focus {
-  background-color: #217dbb !important;
+  background-color: #31b0d5 !important;
 }
 
 .bg-warning {
-  background-color: #F39C12 !important;
+  background-color: #f0ad4e !important;
 }
 
 a.bg-warning:hover, a.bg-warning:focus,
 button.bg-warning:hover,
 button.bg-warning:focus {
-  background-color: #c87f0a !important;
+  background-color: #ec971f !important;
 }
 
 .bg-danger {
-  background-color: #E74C3C !important;
+  background-color: #d9534f !important;
 }
 
 a.bg-danger:hover, a.bg-danger:focus,
 button.bg-danger:hover,
 button.bg-danger:focus {
-  background-color: #d62c1a !important;
+  background-color: #c9302c !important;
 }
 
 .bg-light {
-  background-color: #303030 !important;
+  background-color: #8d9dad !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
-  background-color: #171616 !important;
+  background-color: #6f8397 !important;
 }
 
 .bg-dark {
-  background-color: #adb5bd !important;
+  background-color: #4E5D6C !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: #919ca6 !important;
+  background-color: #39444e !important;
 }
 
 .bg-white {
   background-color: #fff !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
 }
 
 .bg-transparent {
@@ -6579,35 +6587,35 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #375a7f !important;
+  border-color: #DF691A !important;
 }
 
 .border-secondary {
-  border-color: #444 !important;
+  border-color: #4E5D6C !important;
 }
 
 .border-success {
-  border-color: #00bc8c !important;
+  border-color: #5cb85c !important;
 }
 
 .border-info {
-  border-color: #3498DB !important;
+  border-color: #5bc0de !important;
 }
 
 .border-warning {
-  border-color: #F39C12 !important;
+  border-color: #f0ad4e !important;
 }
 
 .border-danger {
-  border-color: #E74C3C !important;
+  border-color: #d9534f !important;
 }
 
 .border-light {
-  border-color: #303030 !important;
+  border-color: #8d9dad !important;
 }
 
 .border-dark {
-  border-color: #adb5bd !important;
+  border-color: #4E5D6C !important;
 }
 
 .border-white {
