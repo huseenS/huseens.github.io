@@ -3303,8 +3303,18 @@ input, select, textarea {
 
 		}
 
+/*Need to set @Media screens for this!*/
+.resp-container {
+	width: 850px; 
+    height: 1200px;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
 .resp-iframe {
-	padding-top: 56%; /* 8:5 Aspect Ratio */
+	padding-top: 52%; /* 8:5 Aspect Ratio */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
