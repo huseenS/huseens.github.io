@@ -53,9 +53,9 @@
   flex-direction: column;
   justify-content: center;
 }
-#HuseenJumbo{
-  background: url(../assets/images/PikesPeak.jpg);
-  background-size: cover;
+#huseenJumbo{
+  background: url(./assets/images/PikesPeak.jpg);
+  background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
 }
