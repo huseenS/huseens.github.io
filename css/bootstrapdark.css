@@ -47,23 +47,18 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.parallax { 
-    /* The image used */
-    background-image: url("img_parallax.jpg");
 
-    /* Set a specific height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.center-img{
+#center-img{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#HuseenJumbo{
+  background: url(../assets/images/PikesPeak.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
 *,
