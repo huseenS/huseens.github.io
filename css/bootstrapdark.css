@@ -55,8 +55,8 @@
 }
 #HuseenJumbo{
   background: url(../assets/images/PikesPeak.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   height: 100%;
 }
