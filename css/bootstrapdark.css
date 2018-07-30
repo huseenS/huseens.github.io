@@ -56,7 +56,7 @@
 #huseenJumbo{
   background: url("https://preview.ibb.co/jikTb8/Pikes_Peak.jpg") !important;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-position: center;
   height: 100%;
 }
