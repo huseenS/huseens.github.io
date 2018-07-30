@@ -5250,6 +5250,10 @@ input[type="button"].btn-block {
   margin-bottom: 2rem;
   background-color: #303030;
   border-radius: 0.3rem;
+  background: url(../assets/images/PikesPeak.jpg) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 100% !important;
 }
 
 @media (min-width: 576px) {
