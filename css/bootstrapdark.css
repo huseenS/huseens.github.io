@@ -54,9 +54,10 @@
   justify-content: center;
 }
 #huseenJumbo{
-  background: url(./assets/images/PikesPeak.jpg);
-  background-size: contain;
+  background: url("https://preview.ibb.co/jikTb8/Pikes_Peak.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 100%;
 }
 
