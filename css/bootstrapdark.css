@@ -54,8 +54,8 @@
   justify-content: center;
 }
 #huseenJumbo{
-  background: url("https://preview.ibb.co/jikTb8/Pikes_Peak.jpg");
-  background-size: cover;
+  background: url("https://preview.ibb.co/jikTb8/Pikes_Peak.jpg") !important;
+  background-size: cover !important;
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
@@ -519,8 +519,7 @@ mark,
 }
 
 .img-thumbnail {
-  padding: 1.5rem;
-  background-color: #222;
+  background-color: transparent;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -5252,6 +5251,10 @@ input[type="button"].btn-block {
   margin-bottom: 2rem;
   background-color: #303030;
   border-radius: 0.3rem;
+  background: url(../assets/images/PikesPeak.jpg) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 100% !important;
 }
 
 @media (min-width: 576px) {
