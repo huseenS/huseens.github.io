@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Huseen Sufi Portfolio<br></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet"title="Boostrap" href="css/bootstrapdark.css">
+		<link rel="stylesheet"title="Boostrap" href="css/fontawesome.css">
+		<!-- Scripts -->
+		<script src="assets/bootstrap.bundle.js"></script>
+		<script src="assets/bootstrap.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="assets/parallax.js-1.5.0"></script>
+		<script> 
+			$('.parallax-window').parallax({imageSrc: 'http://www.richardstjohn.com/blog/wp-content/uploads/2017/08/Pikes-Peak-Summit-from-distance-768x432.jpg'});
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+  		<!-- Google Analytics -->
+		<script>
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('send', 'pageview');
+		</script>
+		<script async src='https://www.google-analytics.com/analytics.js'></script>
+		<!-- End Google Analytics -->
+	</head>
+</head>
+<body>
+	<!-- NavBar-->
+		<nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+	  		<div class="container">
+	    		<div class="navbar-header">
+	      			<a class="navbar-brand" href="#home">Huseen Sufi Portfolio Site</a>
+	    		</div>
+	    		<button class="navbar-toggler hidden-md-up pull-xs-right" data-target="#collapsenav" data-toggle="collapse" type="button">
+	            ☰
+	        	</button>
+	    		<div class="navbar-toggleable-sm collapse pull-md-right text-xs-center" id="collapsenav">
+	      			<ul class="nav navbar-nav">
+	        			<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+	        			<li class="nav-item"><a class="nav-link" href="projects.html">Portfolio</a></li>
+	        			<li class="nav-item"><a class="nav-link" href="contactme.html">Contact</a></li>
+	        			<li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+	        			<li class="nav-item"><a class="nav-link" href="LetterOfRec.html">Letter Of Rec</a></li>
+	      			</ul>
+	    		</div>
+	  		</div>
+		</nav>
+
+		<!---Begin Projects---->
+		<section class="flex" id="portfolio">
+	<!----Animations---->
+    <div class="header waypoint animated slide-in-right" data-animation="slide-in-right">PROJECTS</div>
+    <div class="header-bar waypoint animated slide-in-right" data-animation="slide-in-right" data-delay=".3s" style="animation-delay: 0.3s;"></div>
+    <!----Filters List---->
+    <div class="filter-wrap waypoint animated fade-in" data-animation="fade-in">
+      <div class="flex row">
+        <div class="filter active" data-filter="all">ALL</div>
+        <div class="filter" data-filter=".node">JAVA</div>
+        <div class="filter" data-filter=".rails">RUBY/RAILS</div>
+        <div class="filter" data-filter=".js">JAVASCRIPT</div>
+      </div>
+      <div class="float-bar" style="left: 15px; width: 87px;">
+        <div class="flex row" style="left: -15px;">
+          <div class="filter" data-filter="all">ALL</div>
+          <div class="filter" data-filter=".node">JAVA</div>
+          <div class="filter" data-filter=".rails">RUBY/RAILS</div>
+          <div class="filter" data-filter=".js">JAVASCRIPT</div>
+        </div>
+      </div>
+    </div>
+
+	<!----Project Gallery---->
+    <div id="gallery" class="container flex row wrap animated">
+      <div class="mix js" data-my-order="1" data-bound="" style="display: inline-block;">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Java Sorting Algorithms Comparator</div>
+            <span class="highlight">Java | Java Swing API</span>
+          </div>
+          <div class="button" id="java">Check it out on github</div>
+        </div>
+      </div>
+      <div class="datastructures" data-my-order="1" data-bound="" style="display: inline-block;">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Java Data Structures</div>
+            <span class="highlight">Java</span>
+          </div>
+          <div class="button" id="datastructs">Check it out on github</div>
+        </div>
+      </div>
+      <div class="tbd" data-my-order="1" data-bound="" style="display: inline-block;">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">TBD</div>
+            <span class="highlight">TBD</span>
+          </div>
+          <div class="button" id="TBD">Check it out on github</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
