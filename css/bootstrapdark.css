@@ -50,7 +50,7 @@
 header {
     text-align: center;
     height:50vh;
-    background: url(../assets/images/PikesPeak.jpg) top center no-repeat !important;
+    background: url(assets/images/PikesPeak.jpg) top center no-repeat !important;
     background-size:cover;
     display:flex;
     align-items:center;
