@@ -56,18 +56,18 @@
 
 }
   nav {
-    background:white;
+    background-color:white;
     top:0;
     width: 100%;
     transition:all 0.5s;
-    position: relative;
+    position: fixed;
     z-index: 1;
   }
   
   body.fixed-nav nav {
     position: fixed;
     box-shadow:0 5px 0 rgba(0,0,0,0.1);
-    background:white;
+    background-color:white;
   }
   
   nav ul {
