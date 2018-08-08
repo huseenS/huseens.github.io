@@ -13,7 +13,23 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="assets/parallax.js-1.5.0"></script>
 	</head>
+
 <body>
+	<script>
+		const nav = document.querySelector('#main');
+		let topOfNav = nav.offsetTop;
+
+		function fixNav() {
+		  if (window.scrollY >= topOfNav) {
+		    document.body.style.paddingTop = nav.offsetHeight + 'px';
+		    document.body.classList.add('fixed-nav');
+		  } else {
+		    document.body.classList.remove('fixed-nav');
+		    document.body.style.paddingTop = 0;
+		  }
+		}
+		window.addEventListener('scroll', fixNav);
+	</script>
 	<nav id="main">
         	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main" aria-controls="#main" aria-expanded="false" aria-label="Toggle navigation">
         		<span class="navbar-toggler-icon"></span>
@@ -29,7 +45,7 @@
 		      
     		</ul>
   		</nav>
-  		
+
 	<div class="container-fluid">
 		<!--Footer Begin ---->
 	<footer class="page-footer font-small">
