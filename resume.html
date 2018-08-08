@@ -4,61 +4,60 @@
 	<title>Resume PDF</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet"title="Boostrap" href="css/bootstrap.css">
-	
+	<link rel="stylesheet"title="Boostrap" href="css/bootstrapdark.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<!-- Scripts -->
-	<script src="assets/bootstrap.js"></script>
+	<script src="assets/bootstrap.bundle.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<!-- Google Analytics -->
+	<script>
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-XXXXX-Y', 'auto');
+	ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- End Google Analytics -->
 </head>
 <body>
 	<div class="container-fluid">
 		<!-- Header -->
-		<header id="row justify-content-center">
-			<div class="col mx-auto">
-				<!---Boot Strap Nav -->
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				  <a class="navbar-brand" href="https://image.ibb.co/hTzy68/logo.png" width="150" height="150" alt="Logo not Loading"></a>
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				  </button>
-				    <div class="navbar-nav">
-				      <a class="nav-item nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-				      <a class="nav-item nav-link active" href="resume.html">Resume</a>
-				      <a class="nav-item nav-link" href="projects.html"">Projects</a>
-				      <a class="nav-item nav-link" href="LetterOfRec.html">Leter of Rec</a>
-				    </div>
-				</nav>
+		<script>
+		const nav = document.querySelector('#main');
+		let topOfNav = nav.offsetTop;
+
+		function fixNav() {
+		  if (window.scrollY >= topOfNav) {
+		    document.body.style.paddingTop = nav.offsetHeight + 'px';
+		    document.body.classList.add('fixed-nav');
+		  } else {
+		    document.body.classList.remove('fixed-nav');
+		    document.body.style.paddingTop = 0;
+		  }
+		}
+		window.addEventListener('scroll', fixNav);
+	</script>
+	<!-- Header -->
+	<nav id="main">
+    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main" aria-controls="#main" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<ul>
+	      <li class="logo"><img src="https://image.ibb.co/cf506K/New_HMSLOGO.png">LOGO.</li>
+	      <li><a href="index.html">Home</a></li>
+	      <li><a href="contactme.html">Contact</a></li>
+	      <li><a href="resume.html">Resume</a></li>
+	      <li><a href="projects.html">Projects</a></li>
+	      <li><a href="LetterOfRec.html">References</a></li>
+	      
+		</ul>
+	</nav>
+	<div class="row">
+		<div class="col">
+			<div>
+				<iframe class="scribd_iframe_embed" title="HuseenResume2018 (1)" src="https://www.scribd.com/embeds/384951160/content?start_page=1&view_mode=scroll&access_key=key-XLQAxeqIa2WJXIx2Plcm&show_recommendations=true" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" id="doc_32357" width="800" height="1066" frameborder="0" style="background:black;"></iframe>
 			</div>
-		</header>
-	</div><!-- Wrapper End -->
-	<div class="container-fluid">
-		<div class="row">
-			<main class="col-xl-" >
-					<iframe class="scribd_iframe_embed" title="HuseenResume2018 (1)" src="https://www.scribd.com/embeds/384951160/content?start_page=1&view_mode=scroll&access_key=key-XLQAxeqIa2WJXIx2Plcm&show_recommendations=true" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" id="doc_32357" width="800" height="1066" frameborder="0" style="background:black;"></iframe>
-				</div>
-			</main>
 		</div>
 	</div>
-	<!---Footer--->
-	<div class="container-fluid">
-		<section class="col">
-			<!--Contact ME-->
-			<div class="card">
-				<div class="card-header">
-					<h1 class="card-text">Contact Me</h1>
-				</div>
-				<div class="card-text">
-					<address>
-						Huseen Sufi<br>
-						<a href="tel:+17204010763" class="fas fa-phone fa-3x">720-401-0763</a><br>
-						<a href="mailto:huseensufi@gmail.com?Subject=Interview" target="_top">My Email</a><br>
-						<a href="" class="fa fa-github fa-3x">My Github</a><br>
-						<a href="https://linkedin.com/in/huseensufi/" class="fab fa-linkedin-in fa-3x">My LinkedIn</a><br>
-						<a href="https://facebook.com/huseensufi" class="fab fa-facebook fa-3x">My Facebook</a><br>
-					</address>
-					<hr>
-			</div>
-		</section>
-	</div>
-	</div><!---END FOOTER -->
 </body>
 </html>
