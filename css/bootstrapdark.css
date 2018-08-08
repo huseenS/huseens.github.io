@@ -47,6 +47,15 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+header {
+    text-align: center;
+    height:50vh;
+    background:url(http://wes.io/iEgP/wow-so-deep.jpg) bottom center no-repeat;
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
 
 #center-img{
   display: flex;
@@ -54,20 +63,18 @@
   justify-content: center;
 }
 
-}
-  nav {
-    background-color:white;
+nav {
+    background:black;
     top:0;
     width: 100%;
     transition:all 0.5s;
-    position: fixed;
+    position: relative;
     z-index: 1;
   }
   
   body.fixed-nav nav {
     position: fixed;
     box-shadow:0 5px 0 rgba(0,0,0,0.1);
-    background-color:white;
   }
   
   nav ul {
@@ -88,8 +95,7 @@
   li.logo {
     max-width:0;
     overflow: hidden;
-    background: transparent;
-    
+    background: white;
     transition: all 0.5s;
     font-weight: 600;
     font-size: 30px;
