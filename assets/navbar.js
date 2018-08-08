@@ -1,5 +1,5 @@
 //boostrapjs
-const nav = document.querySelector('#main');
+let nav = document.querySelector('#main');
 let topOfNav = nav.offsetTop;
 
 function fixNav() {
