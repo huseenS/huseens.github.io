@@ -50,7 +50,7 @@
 header {
     text-align: center;
     height:50vh;
-    background:url(http://wes.io/iEgP/wow-so-deep.jpg) bottom center no-repeat;
+    background:url(http://wes.io/iEgP/wow-so-deep.jpg) bottom center no-repeat !important;
     background-size:cover;
     display:flex;
     align-items:center;
@@ -109,6 +109,7 @@ nav {
     max-width:500px;
   }
   
+
   nav a {
     text-decoration: none;
     padding:20px;
