@@ -60,7 +60,15 @@
   background-position: center;
   height: 100%;
 }
-
+  nav {
+    background:black;
+    top:0;
+    width: 100%;
+    transition:all 0.5s;
+    position: relative;
+    z-index: 1;
+  }
+  
   body.fixed-nav nav {
     position: fixed;
     box-shadow:0 5px 0 rgba(0,0,0,0.1);
