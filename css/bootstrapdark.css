@@ -54,12 +54,16 @@
   justify-content: center;
 }
 
-.huseenJumbo{
-  background: url("https://preview.ibb.co/i0nmfe/codebackground2.jpg") !important;
-  background-size: cover;
-  background-repeat: no-repeat !important;
-  background-position: center;
-  height: 100%;
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  height: 100vh;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  background: url(https://images.designtrends.com/wp-content/uploads/2015/12/17115603/Animated-Space-Texture.jpg);
+  background-color: rgb(250,228, 216);
+}
 }
   nav {
     background:black;
