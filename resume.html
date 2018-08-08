@@ -19,25 +19,10 @@
 	<!-- End Google Analytics -->
 </head>
 <body>
+	<script src="assets/navbar.js" type="text/javascript" charset="utf-8" async defer></script>
 	<!-- Header -->
-		<script>
-		const nav = document.querySelector('#main');
-		let topOfNav = nav.offsetTop;
-
-		function fixNav() {
-		  if (window.scrollY >= topOfNav) {
-		    document.body.style.paddingTop = nav.offsetHeight + 'px';
-		    document.body.classList.add('fixed-nav');
-		  } else {
-		    document.body.classList.remove('fixed-nav');
-		    document.body.style.paddingTop = 0;
-		  }
-		}
-		window.addEventListener('scroll', fixNav);
-	</script>
 	<div class="container-fluid">
 	<!-- Header -->
-	<script src="assets/navbar.js" type="text/javascript" charset="utf-8" async defer></script>
 	<nav id="main">
 		<ul>
 	     <li class="logo"><img src="https://image.ibb.co/cf506K/New_HMSLOGO.png" style="background: transparent;"></li>
@@ -52,6 +37,7 @@
 	<header style="background: url(/assets/images/PikesPeak.jpg) top center no-repeat !important;">
 		<h1>Huseen Sufi Resume</h1>		
 	</header>
+
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col">
