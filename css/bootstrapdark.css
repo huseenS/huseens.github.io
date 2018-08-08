@@ -93,7 +93,7 @@
   li.logo {
     max-width:0;
     overflow: hidden;
-    background: white;
+    background: transparent;
     transition: all 0.5s;
     font-weight: 600;
     font-size: 30px;
