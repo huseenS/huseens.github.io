@@ -48,6 +48,8 @@
 }
 
 .box {
+  display: flex;
+  flex-direction: row;
   background: #2db34a;
   border-radius: 6px
   transition-property: background, border-radius;
