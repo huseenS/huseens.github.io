@@ -55,7 +55,7 @@
   background-color: #008CBA;
 }
 
-.div:hover .overlay {
+div:hover .overlay {
   opacity: 1;
 }
 
