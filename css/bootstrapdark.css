@@ -179,12 +179,13 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   text-align: center;
   justify-content: center;
   color: white;
   font-weight: bold;
+  padding: 1.0rem;
 }
 
 p {
@@ -735,6 +736,9 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 15px;
 }
 
 .col {
