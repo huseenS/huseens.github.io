@@ -47,17 +47,19 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.overlay {
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+.box {
+  background: #2db34a;
+  border-radius: 6px
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear, ease-in;
+  transition-delay: 0s, 1s;
+}
+.box:hover {
+  background: #ff7b29;
+  border-radius: 50%;
 }
 
-figure:hover .overlay {
-  opacity: 1;
-}
 
 header {
     text-align: center;
