@@ -165,7 +165,7 @@ MAGIC WALL CSSS
     transform: scale(1.1);
 }
 
-.magicwall li a.colorbox{
+.magicwall li a {
     display: block;
     position: absolute;
     top: 0;
@@ -185,7 +185,7 @@ MAGIC WALL CSSS
 
 }
 
-.magicwall li:hover a.colorbox{
+.magicwall li:hover a {
     opacity: 1;
     -webkit-transform: scale(0.6);
     -ms-transform: scale(0.6);
